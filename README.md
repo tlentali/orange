@@ -15,7 +15,7 @@ $ sudo apt-get install glpk-utils
 Coin OR :
 
 ```
-sudo apt-get install coinor-cbc
+$ sudo apt-get install coinor-cbc
 ```
 
 ## Then, install PulP
