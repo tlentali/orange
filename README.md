@@ -1,5 +1,7 @@
 # operations_research
 
+![alt text](https://github.com/tlentali/operations_research/misc/casey_studio.jpg "Neistat studio NYC")
+
 ## First, install PulP
 
 ```
