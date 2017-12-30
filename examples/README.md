@@ -1,4 +1,4 @@
-\begin{equation}
+$\begin{equation}
 \begin{aligned}
 & \underset{x}{\text{min}}
 & & c^T x \\
@@ -7,3 +7,4 @@
 & & &  x_j, \; \forall j \in N. \\
 \end{aligned}
 \end{equation}
+$
