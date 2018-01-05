@@ -2,6 +2,8 @@
 
 ![alt text](https://raw.githubusercontent.com/tlentali/operations_research/master/misc/casey_studio.jpg "Neistat studio NYC")
 
+>The best solutions are often simple, yet unexpected.  
+>J. Casablancas
 
 ## First, get some solvers
 
