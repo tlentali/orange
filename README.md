@@ -1,6 +1,8 @@
 # operations_research
 
-![alt text](https://raw.githubusercontent.com/tlentali/operations_research/master/misc/casey_studio.jpg "Neistat studio NYC")
+<p align="center"> 
+<img src="https://raw.githubusercontent.com/tlentali/operations_research/master/misc/casey_studio.jpg>
+</p>
 
 >The best solutions are often simple, yet unexpected.  
 >J. Casablancas
