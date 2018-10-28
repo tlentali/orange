@@ -1,11 +1,18 @@
-# operations_research
+# orange
 
-![alt text](https://raw.githubusercontent.com/tlentali/operations_research/master/misc/casey_studio.jpg "Neistat studio NYC")
+<p align="center">
+  <a href="#"><img src="./misc/orange.jpg"  width="350"/></a>
+</p>
+
+Problem solver with [pulp](https://github.com/coin-or/pulp).
+
+## Why ?
 
 >The best solutions are often simple, yet unexpected.  
->J. Casablancas
+>**J. Casablancas**
 
-## First, get some solvers
+## Installation
+### First, get some solvers
 
 GLPK :
 
@@ -20,7 +27,7 @@ Coin OR :
 $ sudo apt-get install coinor-cbc
 ```
 
-## Then, install PulP
+### Then, install PulP
 
 Pulp is a wrapping library that generates input files for various LP solvers.
 
