@@ -4,7 +4,7 @@
   <a href="#"><img src="./misc/orange.jpg"  width="350"/></a>
 </p>
 
-Problem solver with [pulp](https://github.com/coin-or/pulp).
+Problem solver with [PuLP](https://github.com/coin-or/pulp).
 
 ## Why ?
 
