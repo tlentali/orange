@@ -27,12 +27,12 @@ Coin OR :
 $ sudo apt-get install coinor-cbc
 ```
 
-### Then, install PulP
+### Then, install PulP and other libraries
 
 Pulp is a wrapping library that generates input files for various LP solvers.
 
 ```
-$ sudo pip install pulp
+$ pip install -r requirement.txt
 $ pulptest
 ```
 
