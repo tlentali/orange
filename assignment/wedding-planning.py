@@ -16,6 +16,8 @@
 from __future__ import print_function
 from ortools.sat.python import cp_model
 import time
+import pandas as pd
+
 """Finding an optimal wedding seating chart.
 
 From
@@ -87,31 +89,11 @@ def BuildData():
 
     # Connection matrix: who knows who, and how strong
     # is the relation
-    C = [[1, 50, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0,
-          0], [50, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0,
-               0], [1, 1, 1, 50, 1, 1, 1, 1, 10, 0, 0, 0, 0, 0, 0, 0,
-                    0], [1, 1, 50, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0],
-         [1, 1, 1, 1, 1, 50, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0,
-          0], [1, 1, 1, 1, 50, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0,
-               0], [1, 1, 1, 1, 1, 1, 1, 50, 1, 0, 0, 0, 0, 0, 0, 0, 0],
-         [1, 1, 1, 1, 1, 1, 50, 1, 1, 0, 0, 0, 0, 0, 0, 0,
-          0], [1, 1, 10, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0,
-               0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 50, 1, 1, 1, 1, 1, 1],
-         [0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 1, 1, 1, 1, 1, 1,
-          1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1,
-               1], [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1], [
-                   0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1
-    ], [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1], [
-                   0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1
-    ], [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1]]
+    df = pd.read_csv('wedding.csv', sep=';')
+    C = df.as_matrix()
 
     # Names of the guests. B: Bride side, G: Groom side
-    names = [
-        "Deb (B)", "John (B)", "Martha (B)", "Travis (B)", "Allan (B)",
-        "Lois (B)", "Jayne (B)", "Brad (B)", "Abby (B)", "Mary Helen (G)",
-        "Lee (G)", "Annika (G)", "Carl (G)", "Colin (G)", "Shirley (G)",
-        "DeAnn (G)", "Lori (G)"
-    ]
+    names = list(df.columns)
     return num_tables, table_capacity, min_known_neighbors, C, names
 
 
