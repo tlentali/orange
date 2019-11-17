@@ -35,4 +35,5 @@ Pulp is a wrapping library that generates input files for various LP solvers.
 $ pip install -r requirement.txt
 $ pulptest
 ```
-
+Look at :  
+[seetd](https://github.com/stitchfix/seetd)
