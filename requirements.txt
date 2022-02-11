@@ -14,7 +14,7 @@ parso==0.3.1
 pexpect==4.6.0
 pickleshare==0.7.5
 prompt-toolkit==1.0.15
-protobuf==3.6.1
+protobuf==3.15.0
 ptyprocess==0.6.0
 PuLP==1.6.9
 Pygments==2.2.0
